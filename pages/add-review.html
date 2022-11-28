@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pridať recenziu</title>
+
+    <style>
+        body{
+            background-color: beige;
+        }
+        form{
+            border: solid black 3px;
+            background-color: goldenrod;
+            width: 40%;
+            padding: 10px;
+            margin: auto;
+        }
+        input, select{
+            display: block;
+            margin: 5px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        #text{
+            display: block;
+            margin: 5px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        datalist {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            writing-mode: vertical-lr;
+            width: 100%;
+        }
+        h2{
+            border: solid black 2px;
+            background-color: chocolate;
+        }
+        #tlacidlo{
+            border-radius: 5px;
+            background-color: chocolate;
+            color: white;
+        }
+        label{
+            color: darkblue;
+            text-decoration: underline;
+        }
+        aside{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: solid 10px black;
+            left: 75%;
+            bottom: 230px;
+        }
+        #prvy{
+            position: absolute;
+            border: solid 13px blue;
+            width: 130px;
+            height: 130px;
+            z-index: 1;
+        }
+        #druhy{
+            position: absolute;
+            right: 0;
+            border: solid 13px red;
+            width: 130px;
+            height: 130px;
+            z-index: 2;
+        }
+        #treti{
+            position: absolute;
+            right: 0;
+            top: 45px;
+            border: solid 13px darkorange;
+            width: 130px;
+            height: 130px;
+            z-index: 3;
+        }
+        #stvrty{
+            position: absolute;
+            left: 0;
+            top: 45px;
+            border: solid 13px green;
+            width: 130px;
+            height: 130px;
+            z-index: 4;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://monikaoravcova.github.io/Uloha-9.3.1/">Domov</a>
+
+    
+    <form action="" method="get">
+        <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Pridať recenziu</h2>
+
+        <label for="film">Názov filmu:</label><br>
+        <label for="film"><i>(*povinný údaj)</i></label>
+        <input type="text" name="Názov filmu" id="film" placeholder="film">
+
+        <label for="meno">Meno / nick:</label>
+        <input type="text" name="Meno/nick" id="meno" placeholder="meno">
+
+        <label for="mail">E-mail:</label><br>
+        <label for="mail"><i>(*povinný údaj)</i></label>
+        <input type="email" name="mail" id="mail" placeholder="email">
+
+        <label for="text">Textové pole:</label>
+        <textarea id="text" cols="30" rows="10" placeholder="sem napíš svoj komentár"></textarea>
+
+       <label for="datum">Film bol naposledy pozeraný:</label>
+       <input type="date" name="datum" id="datum">
+
+       <label for="hodnotenie">Ohodnoďte film:</label>
+       <input type="range" id="hodnotenie" name="hodnotenie" step="5"  min="0" max="100" value="50">
+
+       <datalist id="znacky">
+        <option value="0" label="nič moc"></option>
+        <option value="25" label="okey"></option>
+        <option value="50" label="priemer"></option>
+        <option value="75" label="výborný"></option>
+        <option value="100" label="fantastický"></option>
+      </datalist>
+      
+       <label for="zanre">Žáner filmu:</label>
+       <select name="zanre" id="zanre">
+            <option value="">komédia</option>
+            <option value="">dráma</option>
+            <option value="">akčný</option>
+            <option value="">fantasy</option>
+            <option value="">thriller</option>
+            <option value="">romantický</option>
+            <option value="">rozprávka</option>
+        </select>
+
+        <input type="submit" value="Odošli" id="tlacidlo">
+
+    </form>
+
+    <aside>
+        <div id="prvy"></div>
+        <div id="druhy"></div>
+        <div id="treti"></div>
+        <div id="stvrty"></div>
+    </aside>
+    
+</body>
+</html>

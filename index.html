@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oravcová Monika</title>
+
+    <style>
+        h3{
+            color: crimson;
+        }
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 0px;
+            background-color: rgb(190, 190, 12);
+        }
+        section{
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        div{
+            background-color: rgb(113, 156, 27);
+            border: solid 2px black;
+        }
+        nav, div{
+            font-size: 14px;
+            margin: 5px;
+            box-sizing: border-box;
+        }
+        p{
+            font-weight: bold;
+        }
+        .film1{
+            display: inline-block;
+            box-sizing: border-box;
+            background-image: url(pages/wallpaperflare.com_wallpaper_divergent.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 390px;
+            height: 250px;
+            border: solid 3px darkblue;
+            border-radius: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .film2{
+            display: inline-block;
+            box-sizing: border-box;
+            background-image: url(pages/wallpaperflare.com_wallpaper_adrift.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 520px;
+            height: 250px;
+            border: solid 3px darkblue;
+            border-radius: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .film3{
+            display: inline-block;
+            box-sizing: border-box;
+            background-image: url(pages/163120331_7207c5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 390px;
+            height: 250px;
+            border: solid 3px darkblue;
+            border-radius: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button{
+            background-color: coral;
+            border-radius: 5px;
+            border: solid 2px black;
+            text-transform: uppercase;
+            color: beige;
+        }
+        button:hover{
+            background-color: yellowgreen;
+        }
+        article{
+            background-color: pink;
+        }
+        header{
+            text-decoration: double;
+            background-color: darksalmon;
+        }
+        .pismeno::first-letter{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            color: indigo;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div><a href="https://monikaoravcova.github.io/Uloha-9.3.1/"><p style="color: white">Domov</p></a></div>
+        <div><a href="./pages/topMovies.html"><p style="color: white"><b>Top 20 filmov</b></p></a></div>
+        <div><a href="./pages/add-review.html"><p style="color:white"><b>Pridať recenziu (nové)</b></p></a></div>
+    </nav>
+
+<section>
+    <div class="film1">
+         <h2 style="color: greenyellow; ">Divergencia</h2>
+         <p style="color: lawngreen">Americký sci-fi akčný film (2014), nakrútený podľa predlohy rovnomenného románu od Veronicy Rothovej. Je prvou časťou série Divergencia (The Divergent Series)</p>
+         <button onclick="window.location.href='./pages/movie1.html';">Divergencia</button> 
+    </div>
+
+    <div class="film2">
+        <h2 style="color: green;">Kým prišla búrka</h2>
+        <p style="color: midnightblue;">Americký romantický a dramatický film (2018). Film je inspirovaný skutočným príbehom, ktorý sa stal v roku 1983,<br> kedy mladý pár uviazol uprostred Tichého oceánu a musí nájsť cestu na Havaj s poškodenou loďou a žiadnym spojením.</p>
+        <button onclick="window.location.href='./pages/movie2.html';">Kým prišla búrka</button> 
+    </div>
+
+    <div class="film3">
+        <h2 style="color: greenyellow; ">Jak vytrhnout velerybe stoličku</h2>
+        <p style="color: lawngreen; ">Ako vytrhnúť veľrybe stoličku je rodinná filmová komédia, natočená režisérkou Máriou Poledňákovou v roku 1977.</p>
+        <button onclick="window.location.href='./pages/movie3.html';">Jak vytrhnout velerybe stoličku</button> 
+    </div>
+</section>
+
+    <article style="height: 300px;" >
+        <header>
+        <h1>Filmy, čo mám rád!</h1>
+        </header>
+        <h3>Divergencia</h3>
+        <p class="pismeno">Futurickosť a možnosť sa začleniť k skupine ľudí, ku ktorým zapadám.</p>
+        <h3>Kým prišla búrka</h3>
+        <p class="pismeno">Napriek nešťastnému osudu mi imponuje dobrodružná a romantická povaha hlavnej hrdinky.</p>
+        <h3>Jak vytrhnout velerybe stoličku</h3>
+        <p class="pismeno">Roztomilý chlapec, ktorý má podarené a trefné hlášky.</p>
+    </article>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top filmy</title>
+
+    <style>
+        table{
+            background-color: black;
+        }
+        tr{
+            border: solid black 1px;
+            background-color: aliceblue;
+        }
+        th{
+            font-family: 'Courier New', Courier, monospace;
+            color: maroon;
+        }
+        .riadok{
+            background-color: aqua;
+        }
+        .poradie{
+            text-align: right;
+        }
+        .devatdesiatdva {
+            color: rgb(31, 126, 31);
+        }
+        audio{
+            float: right;
+        }
+        .tooltip{
+            position: static;
+            left: 250px;
+            top: 55px;
+            display: inline-block;
+        }
+        .tooltip .tooltiptext{
+            display: inline-block;
+            visibility: hidden; 
+            width: 280px;
+            text-align: center;
+            line-height: 110px;
+            background-color: cadetblue;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;  
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+            cursor: pointer;
+        }
+    </style>
+   
+</head>
+<body>
+    <a href="https://monikaoravcova.github.io/Uloha-9.3.1/">Domov</a>
+
+    <audio autoplay src="drop-it-124014.mp3" controls></audio>
+    
+    <table>
+        <tr class="riadok">
+          <th><i>Poradie</i></th>
+          <th><i>Názov filmu</i></th>
+          <th><i>Rok vydania</i></th>
+          <th><i>Hodnotenie v percentách</i></th>
+        </tr>
+        <tr>
+          <td class="poradie">1.</td>
+          <td class="tooltip">Vykúpenie z väznice Shawshank
+            <span class="tooltiptext">
+                <img src="shawshank-hlavna-postava.jpeg" alt="" width="150" height="110" style="float: left;">Tim Robbins
+            </span>
+          </td>
+          <td>1994</td>
+          <td class="devatdesiatdva">95,3 &#37;</td>
+        </tr>
+        <tr class="riadok">
+            <td class="poradie">2.</td>
+            <td class="tooltip">Forrest Gump
+                <span class="tooltiptext">
+                    <img src="forrest-gump.jpg" alt="" width="100" height="110" style="float: left;">Tom Hanks
+                </span>
+            </td>
+            <td>1994</td>
+            <td class="devatdesiatdva">94,5 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie">3.</td>
+            <td class="tooltip">Zelená míľa
+                <span class="tooltiptext">
+                    <img src="zelena-mila.jpg" alt="" width="140" height="110" style="float: left;">Michael C. Duncan
+                </span>
+            </td>
+            <td>1999</td>
+            <td class="devatdesiatdva">92,9 &#37;</td>
+        </tr>
+        <tr class="riadok">
+            <td class="poradie">4.</td>
+            <td class="tooltip">Sedem
+                <span class="tooltiptext">
+                    <img src="sedem.jpg" alt="" width="140" height="110" style="float: left;">Morgan Freeman
+                </span>
+            </td>
+            <td>1995</td>
+            <td class="devatdesiatdva">92,4 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie">5.</td>
+            <td class="tooltip">Prelet nad kukučím hniezdom
+                <span class="tooltiptext">
+                    <img src="jack-nicholson-milos-forman-clanokW.jpg" alt="" width="140" height="110" style="float: left;">Jack Nicholson
+                </span>
+            </td>
+            <td>1975</td>
+            <td class="devatdesiatdva">92,5 &#37;</td>
+        </tr>
+        <tr class="riadok">
+            <td class="poradie">6.</td>
+            <td>Schindlerov zoznam</td>
+            <td>1993</td>
+            <td class="devatdesiatdva">92,3 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie">7.</td>
+            <td>Krstný otec</td>
+            <td>1972</td>
+            <td>91,8 &#37;</td>
+        </tr>
+        <tr class="riadok">
+            <td class="poradie">8.</td>
+            <td>Dvanásť rozhnevaných mužov</td>
+            <td>1957</td>
+            <td>91,4 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie">9.</td>
+            <td>Nedotknuteľní</td>
+            <td>2011</td>
+            <td>91,3 &#37;</td>
+        </tr>
+        <tr class="riadok">
+            <td class="poradie">10.</td>
+            <td>Pelechy</td>
+            <td>1999</td>
+            <td>91,2 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie">11.</td>
+            <td>Terminátor 2: Deň zúčtovania</td>
+            <td>1991</td>
+            <td>90,9 &#37;</td>
+        </tr>
+        <tr class="riadok">
+            <td class="poradie">12.</td>
+            <td>Pulp Fiction: Historky z podsvetia</td>
+            <td>1994</td>
+            <td>90,7 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie">13.</td>
+            <td>Krstný otec II</td>
+            <td>1974</td>
+            <td>90,8 &#37;</td>
+        </tr>
+        <tr class="riadok">
+            <td class="poradie">14.</td>
+            <td>Pán prsteňov: Spoločenstvo Prsteňa</td>
+            <td>2001</td>
+            <td>90,6 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie">15.</td>
+            <td>Pán prsteňov: Návrat kráľa</td>
+            <td>2003</td>
+            <td>90,5 &#37;</td>
+        </tr>
+        <tr class="riadok">
+            <td class="poradie">16.</td>
+            <td>Mlčanie jahniat</td>
+            <td>1991</td>
+            <td>90,5 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie">17.</td>
+            <td>Vtedy na Západe</td>
+            <td>1968</td>
+            <td>90,5 &#37;</td>
+        </tr>
+        <tr class="riadok">
+            <td class="poradie">18.</td>
+            <td>Temný rytier</td>
+            <td>2008</td>
+            <td>90,4 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie">19.</td>
+            <td>Gran Torino</td>
+            <td>2008</td>
+            <td>90,3 &#37;</td>
+        </tr>
+        <tr class="riadok">
+            <td class="poradie">20.</td>
+            <td>Matrix</td>
+            <td>1999</td>
+            <td>90,2 &#37;</td>
+        </tr>        
+      </table>
+      
+<article>
+    <header>
+        <h3><b>Top film: Vykúpenie z väznice Shawshank</b></h3>
+    </header>
+        <p style="text-align: left;"><img src="https://image.pmgstatic.com/cache/resized/w663/files/images/film/posters/162/124/162124971_eaa16f.jpg" alt="Vykúpenie z väznice Shawshank" style="float:left; padding-right: 15px;width:150px; height: 200px;">Mladý bankéř Andy Dufresne (Tim Robbins) je v roce 1947 odsouzen za vraždu své ženy a jejího milence. Přesto, že tento čin popírá, čeká na něj dvojnásobný doživotní trest v obávané věznici Shawshank. Andy se snaží přizpůsobit vězeňskému životu a po krušných začátcích se sblíží s Redem (Morgan Freeman), jenž si tu odpykává svůj doživotní trest už dvacet let. Sílu, jak přežít zdejší peklo, Andy nachází v tajném snu a skryté naději na svobodu...</p>
+</article>
+
+</body>
+</html>
